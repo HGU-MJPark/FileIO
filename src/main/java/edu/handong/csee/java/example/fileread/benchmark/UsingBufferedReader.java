@@ -8,11 +8,11 @@ import java.io.*;
 public class UsingBufferedReader {
     public static void main(String[] args) throws IOException {
 
-
+    	String[] Filename = { args[0], args[1] };
         //-------------- Test reading 1 MB file. --------------------
 
         StopWatch.start();
-
+        
         BufferedReader inputStream= new BufferedReader(new FileReader(DumpDataWriter.input1MB));
         while (inputStream.read()!=-1){}
 
